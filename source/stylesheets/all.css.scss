@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import "gumby";
+
+$orange: #FF9900;
+$light-gray: #E9E9E9;
+$gray: #BCBCBC;
+$dark-gray: #424242;
+$blue: #3299BB;
+
+$offwhite: #f8f8f8;
+
+body {
+  @include colgrid(12);
+}
+
+nav.navbar {
+  background-color: $dark-gray;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: $blue;
+
+  text-align: center;
+
+  > div {
+    @include row();
+  }
+
+  h1, h4 {
+    color: $offwhite;
+  }
+
+  h4 {
+    @include column(8, 'center');
+  }
+}
