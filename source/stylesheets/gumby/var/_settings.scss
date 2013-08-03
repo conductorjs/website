@@ -21,7 +21,7 @@ $nav-distance: 0px; 							// Navigation distance from the top of the viewport
 $font-family: "Open Sans";
 $font-style-italic: italic;
 $icons: entypo;
-$font-smoothing: antialiased;
+$font-smoothing: subpixel-antialiased;
 
 // Font Weights
 $font-weight-bold: 700;
@@ -47,7 +47,7 @@ $rhythm-height: .711;
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale
 $ratio: golden();						// Ratio for Modular Scale
-$base-font-size: 16px !default;
+$base-font-size: 18px !default;
 $importantNum: 78px !default;
 $base-size: $base-font-size $importantNum;
 // Gumby Default Scale Values: 16, 18, 26, 30, 42, 48, 68, 78, 110, 126;
@@ -79,7 +79,7 @@ $global-bg-color: #fff;
 $navbar-color: #4a4d50;
 $navbar-link-color: #fff;
 
-$primary-color: #3085d6;
+$primary-color: $orange;
 $secondary-color: #42a35a;
 $default-color: #f2f2f2;
 $info-color: #4a4d50;

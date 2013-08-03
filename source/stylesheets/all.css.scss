@@ -1,38 +1,56 @@
 @charset "utf-8";
 
-@import "gumby";
-
 $orange: #FF9900;
 $light-gray: #E9E9E9;
 $gray: #BCBCBC;
 $dark-gray: #424242;
 $blue: #3299BB;
 
+@import "gumby/gumby";
+@import "compass/layout/grid-background";
+
 $offwhite: #f8f8f8;
 
-body {
-  @include colgrid(12);
-}
-
-nav.navbar {
-  background-color: $dark-gray;
-  margin-bottom: 0;
-}
-
-header {
+.navbar {
   background-color: $blue;
 
-  text-align: center;
-
-  > div {
+  .menu {
     @include row();
   }
 
-  h1, h4 {
-    color: $offwhite;
+  ul li > a {
+    @include text-shadow(none);
+    font-weight: $font-weight-semibold;
   }
+}
 
-  h4 {
-    @include column(8, 'center');
+.download {
+  padding: ms(4) 0;
+  text-align: center;
+
+  .btn {
+    display: inline-block;
   }
+}
+
+.block {
+  background-color: $orange;
+  height: $xlarge;
+}
+
+h1 {
+  color: $blue;
+  @include font-size($reallybig);
+}
+
+@include respond(all-phones) {
+  h1 { @include font-size($xlarge); }
+}
+
+h4 {
+  color: $dark-gray;
+}
+
+p:first-of-type {
+  @include leader(1);
 }
