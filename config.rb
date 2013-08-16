@@ -68,3 +68,10 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+require "redcarpet"
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+activate :syntax

@@ -3,10 +3,14 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~>3.1.3"
-gem "modular-scale";
+gem "modular-scale"
+
+gem "redcarpet"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
+
+gem "middleman-syntax"
 
 # For faster file watcher updates:
 # gem "wdm", "~> 0.1.0") # Windows

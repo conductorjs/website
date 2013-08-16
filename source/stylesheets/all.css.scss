@@ -8,8 +8,13 @@ $blue: #3299BB;
 
 @import "gumby/gumby";
 @import "compass/layout/grid-background";
+@import "syntax";
 
 $offwhite: #f8f8f8;
+
+a:hover {
+  text-decoration: underline;
+}
 
 .navbar {
   background-color: $blue;
