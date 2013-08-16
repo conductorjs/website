@@ -38,11 +38,6 @@ a:hover {
   }
 }
 
-.block {
-  background-color: $orange;
-  height: $xlarge;
-}
-
 h1 {
   color: $blue;
   @include font-size($reallybig);
@@ -52,10 +47,26 @@ h1 {
   h1 { @include font-size($xlarge); }
 }
 
+h3 {
+  margin: ms(3) 0;
+  color: $blue;
+  font-weight: $font-weight-semibold;
+}
+
 h4 {
   color: $dark-gray;
 }
 
+p {
+  margin: ms(2) 0;
+}
+
 p:first-of-type {
   @include leader(1);
+}
+
+.warning {
+  @include font-size($small);
+  text-transform: uppercase;
+  color: #FF0700;
 }
